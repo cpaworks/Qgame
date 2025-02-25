@@ -1,0 +1,275 @@
+<html lang="en">
+	
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Game Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .overlay {
+			margin:15px;
+            transition: background-color 0.3s ease;
+        }
+        .overlay:hover {
+            background-color: rgba(255, 0, 150, 0.7);
+        }
+	    
+    </style>
+
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-2xl font-bold" href="#">Game Universe</a>
+            <ul class="flex space-x-4">
+                <li><a class="hover:text-gray-400" href="#">Home</a></li>
+                <li><a class="hover:text-gray-400" href="#">Features</a></li>
+                <li><a class="hover:text-gray-400" href="#">Screenshots</a></li>
+                <li><a class="hover:text-gray-400" href="#">Download</a></li>
+                <li><a class="hover:text-gray-400" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center">
+        <img alt="Poster with lots of mage pictures from the game" class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080" src="https://storage.googleapis.com/a1aa/image/f0--LscQmxW0m1_C74qGEdl5QLGmvvO9lsidmGoHb7w.jpg" width="1920"/>
+        <div class="relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to Game Universe</h1>
+            <p class="text-xl md:text-2xl mb-8">Experience the ultimate adventure</p>
+            <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-700 rounded-lg">
+                    <i class="fas fa-dragon text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Epic Battles</h3>
+                    <p>Engage in thrilling battles with epic bosses and enemies.</p>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg">
+                    <i class="fas fa-map text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Expansive World</h3>
+                    <p>Explore a vast open world filled with secrets and adventures.</p>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg">
+                    <i class="fas fa-users text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Multiplayer</h3>
+                    <p>Team up with friends and other players in multiplayer mode.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Screenshots Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Screenshots</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative group m-8">
+                    <img alt="Screenshot of an epic battle scene in the game" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/tHFceT_EDDhcdUXYw11MoiaTEikR-L94QbRGHpF12wE.jpg" />
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Epic Battle</h3>
+                        <p class="mb-4">An intense battle scene.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Screenshot of the expansive world in the game" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/_oHtn4P9DzY4vb6q4d2xiG9WmCEiHjuGEyEkqp1aiUM.jpg" />
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Expansive World</h3>
+                        <p class="mb-4">Explore the vast world.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Screenshot of multiplayer gameplay in the game" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/ZiGBdfZJ21YfK13GruhqKAsP2zK0M_hbVcIFq3E6flY.jpg" />
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Multiplayer</h3>
+                        <p class="mb-4">Join multiplayer battles.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Game Showcase Section -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Game Showcase</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="relative group m-8">
+                    <img alt="Poster of a mage casting a spell" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/-fnUJUw3ofvgGSs17NI5094NnripmfdBZ-nr4yh8_RA.jpg" width="400"/>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Mage Spell</h3>
+                        <p class="mb-4">A mage casting a powerful spell.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Poster of a warrior in battle" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/b6DCKzOS6Gndxk4vfWsbP4_550LVa78c3lTOS_WI9Lo.jpg" width="400"/>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Warrior Battle</h3>
+                        <p class="mb-4">A warrior in the heat of battle.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Poster of a dragon flying over a castle" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/9ucPJGCPv-Dwfx8RWJM8-k3XVhvg65sBAx1rtpMwFrQ.jpg" width="400"/>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Dragon Flight</h3>
+                        <p class="mb-4">A dragon soaring over a castle.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Poster of a multiplayer team in action" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/ozx8HZuKaxPoaGDPTo6n1I81XiguHpUPJ7rpnYMfI7Y.jpg" width="400"/>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Team Action</h3>
+                        <p class="mb-4">A multiplayer team in action.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Poster of a futuristic cityscape" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/WuI330IRsr8yQmopUceJm26jRyFqaP4UjUjoyXxUiCY.jpg" width="400"/>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Futuristic City</h3>
+                        <p class="mb-4">A stunning futuristic cityscape.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Poster of a space battle" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/EVkejc9eJgge1psld9uHRpbgdtEbjXiYAwcpBiEyfzA.jpg" width="400"/>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Space Battle</h3>
+                        <p class="mb-4">An epic battle in space.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Poster of a medieval castle" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/k2PiqCmJB1bjVW3P2OX8we-DLVjmdLB4Xgcf6eC_LY8.jpg" width="400"/>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Medieval Castle</h3>
+                        <p class="mb-4">A grand medieval castle.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Poster of a cyberpunk character" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/7swIA5app6aCpdP0ZRN724gMDsZ5W1UTkqHGIiGIQjs.jpg" width="400"/>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Cyberpunk Character</h3>
+                        <p class="mb-4">A character in a cyberpunk world.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Poster of a fantasy forest" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/Sr1bP0Xs4ZBo5iuMlfHqc8nPJffmTp8O65SUJXaVLxM.jpg" width="400"/>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Fantasy Forest</h3>
+                        <p class="mb-4">A mystical fantasy forest.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Poster of a post-apocalyptic world" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/-FQwr7vYG2YtlQrM1sUkJ4uLJ4g8CzuxTedVnAkoqOA.jpg" width="400"/>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Post-Apocalyptic World</h3>
+                        <p class="mb-4">A world after an apocalypse.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Poster of a pirate ship" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/23MlHc-cZtTUcCi-Yp1WAAfpguXQhi6KNeTVtEvAxBc.jpg" width="400"/>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Pirate Ship</h3>
+                        <p class="mb-4">A pirate ship on the high seas.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+                <div class="relative group m-8">
+                    <img alt="Poster of a superhero team" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/GOLCzob2tBCr1jXY3tqtBuR0YYWP6svaY4YsKt66FjA.jpg" width="400"/>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-pink-500 bg-opacity-0 group-hover:bg-opacity-70 rounded-lg overlay">
+                        <h3 class="text-2xl font-bold mb-2">Superhero Team</h3>
+                        <p class="mb-4">A team of superheroes.</p>
+                        <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Play Now</a>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- Download Section -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Download Now</h2>
+            <p class="text-xl mb-8">Available on multiple platforms. Get it now and start your adventure!</p>
+            <div class="flex justify-center space-x-4">
+                <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">Download for PC</a>
+                <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" href="#">Download for Mac</a>
+                <a class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" href="#">Download for Linux</a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input class="w-full p-2 rounded bg-gray-700 text-white" placeholder="Your Name" type="text"/>
+                </div>
+                <div class="mb-4">
+                    <input class="w-full p-2 rounded bg-gray-700 text-white" placeholder="Your Email" type="email"/>
+                </div>
+                <div class="mb-4">
+                    <textarea class="w-full p-2 rounded bg-gray-700 text-white" placeholder="Your Message"></textarea>
+                </div>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Game Universe. All rights reserved.</p>
+        </div>
+    </footer>
+	 <!-- Popup Modal -->
+  <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50" id="popup">
+   <div class="bg-white text-black p-6 rounded-lg shadow-lg max-w-sm w-full">
+    <h2 class="text-2xl font-bold mb-4 text-center">
+     Welcome to the Game Universe
+    </h2>
+    <p class="mb-4 text-center">
+     Do you want to Play this game?
+    </p>
+	<br>
+	<br>
+	
+    <div class="flex justify-center space-x-4">
+     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="openLink()">
+      Yes
+     </button>
+     <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" onclick="openLink()">
+      Cancel
+     </button>
+    </div>
+   </div>
+  </div>
+		  <script>
+ 
+          
+
+        function openLink() {
+            window.open('https://cparobust.com/smartlink/25527229/9a898051-714a-4b3f-b0bd-be477f385111/facebook/', '_blank');
+            document.getElementById('popup').style.display = 'none';
+        }
+  </script>
+</body>
+</html> 
